@@ -44,7 +44,7 @@ async function sendBtn(){
                     Ollamaloading.remove()
                     chat_area.innerHTML +=`
                     <div class="chat-message bot">
-                        <img src="static/Ollama.png" alt="Ollama" width="30px">
+                        <img src="{{url_for('static',filename='ollama.png')}}" alt="Ollama" width="30px">
                         <div class="message" id="chatbot${i}">${botResponse}<div class="time prevent-select">${formattedTime}</div></div>
                     </div>`
                     
